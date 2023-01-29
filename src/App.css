@@ -1,0 +1,125 @@
+nav {
+  width: 96.5%;
+  display: flex;
+  font-family: 'Markazi Text';
+  font-weight: bold;
+  font-size: 1.6rem;
+  align-items: center;
+  height: 2rem;
+  justify-content:space-between;
+}
+ul {
+  width: 85%;
+  display:flex;
+  text-decoration: none;
+  list-style:none;
+  color:#495E57;
+  justify-content:space-between;
+}
+
+li {
+  transition: color 0.2s ease 100ms;
+}
+
+li:hover{
+  color:#FeCE14;
+  font-weight:bolder;
+  cursor: pointer;
+}
+
+.App {
+  background-color: #495E57;
+}
+.App-container {
+  display: grid;
+  grid-template:
+  "header nav nav" 1fr
+  "main main main" 2fr
+  "foot foot foot" 1fr/ .3fr 1fr auto;
+  background-color: #495E57;
+}
+
+.App-header {
+  display: flex;
+  grid-area: header;
+  background-color: #EDEFEE;
+  height: 3rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.App-header > img {
+  height: 3rem;
+}
+.App-nav{
+  grid-area: nav;
+  background-color: #EDEFEE;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3rem;
+  padding: 1rem;
+
+}
+
+.App-main {
+  grid-area: main;
+}
+.App-foot {
+  width: 100%;
+  height: 8.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  grid-area: foot;
+  display: grid;
+  grid-template:
+  "foot-logo foot-nav foot-contact foot-social" 1fr/ 0.1fr 0.2fr 0.1fr .6fr;
+  background-color: #EDEFEE;
+}
+App-foot-logo {
+  width: 5rem;
+  grid-area: foot-logo;
+  display:flex;
+  height: auto;
+}
+.App-foot-logo img {
+  min-width: 4rem;
+  width: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2rem;
+
+}
+.App-foot nav{
+  grid-area: foot-nav;
+  height: 8.5rem;
+  width: 10rem;
+}
+.App-foot-ul {
+  font-size: 1rem;
+  flex-direction: column;
+}
+
+.App-foot-contact h2 {
+  grid-area:foot-contact;
+  line-height: 0.1;
+}
+.App-foot-social {
+  grid-area: foot-social;
+  display: block;
+  justify-content:space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.App-foot-social-ico{
+  width: 4rem;
+  padding: 1rem;
+  transition: 0.2s ease;
+}
+.App-foot-social-ico:hover {
+  filter: invert(0%) sepia(0%) saturate(6000%) hue-rotate(300deg) brightness(100%) contrast(112%);
+  cursor: pointer;
+}
+.App-foot-social small {
+  font-family: 'Karla';
+  width: auto;
+  text-align: center;
+}

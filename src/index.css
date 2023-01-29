@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  margin: 0;
+  font-family: 'Markazi Text', serif;
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html {
+  height: 100%;
+  width: 98%;
+  max-width: 1200px;
+  margin:auto;
+}

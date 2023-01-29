@@ -1,9 +1,10 @@
+import Hero from './Hero'
 
 const Main = () => {
 
     return(
         <main className='App-main'>
-         Main
+            <Hero />
         </main>
     )
 }

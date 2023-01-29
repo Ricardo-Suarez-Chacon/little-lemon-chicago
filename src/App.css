@@ -1,9 +1,9 @@
 nav {
   width: 96.5%;
   display: flex;
-  font-family: 'Markazi Text';
+  font-family: 'Karla';
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   align-items: center;
   height: 2rem;
   justify-content:space-between;
@@ -23,7 +23,6 @@ li {
 
 li:hover{
   color:#FeCE14;
-  font-weight:bolder;
   cursor: pointer;
 }
 
@@ -122,4 +121,38 @@ App-foot-logo {
   font-family: 'Karla';
   width: auto;
   text-align: center;
+}
+
+/*--------------------Button ---------------*/
+.App-button {
+   color:#333333;
+   background-color:#FeCE14;
+   border-radius: 4px;
+   font-family: 'Karla';
+   font-size: 1rem;
+   padding: 10px 20px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+.App-button:hover {
+  background-color: #EE9972;
+}
+
+.Hero-Title {
+  color:#FeCE14;
+  font-family: 'Markazi Text';
+  font-weight:500;
+  font-size:64pt;
+}
+.Hero-Chicago {
+  color:#EDEFEE;
+  font-family: 'Markazi Text';
+  font-weight:500;
+  font-size:40pt;
+}
+.Hero-Paragraph {
+  color:#EDEFEE;
+  font-family:'Karla';
+  font-weight: 400;
+  font-size:18pt;
 }

@@ -33,9 +33,9 @@ li:hover{
   display: grid;
   grid-template:
   "header nav nav" .3fr
-  "main main main" 2fr
+  "main main main" auto
   "foot foot foot" .7fr/ .3fr 1fr auto;
-  background-color:#EDEFEE;
+  background-color:#fff;
 }
 
 .App-header {
@@ -61,6 +61,7 @@ li:hover{
 
 .App-main {
   grid-area: main;
+  height: auto;
 }
 .App-foot {
   width: 100%;
@@ -194,5 +195,72 @@ App-foot-logo {
 .Hero-White {
   grid-area: white;
   height: 3.5rem;
+  background-color: #fff
+}
+
+/*-------------------- Highlights --------------*/
+.Hl-container {
+  height: 55rem;
+
+}
+
+
+/*-------------------- Highlights data card --------------*/
+.Hl-card-container{
+  display: grid;
+  grid-template:
+  "photo photo" 0.3fr
+  "Title price" 0.1fr
+  "text text" auto
+  "foot1 foot2" .1fr/ 1fr .5fr;
   background-color: #EDEFEE;
+  height: auto;
+  width: 12rem;
+  border: solid 1px rgba(51, 51, 51, 0.1);
+  border-radius: 16px 16px 0 0;
+}
+
+.Hl-card-photo{
+  grid-area: photo;
+  height: auto;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.Hl-card-title{
+  grid-area: Title;
+  font-size: 12pt;
+  text-align: center;
+}
+.Hl-card-price{
+  grid-area: price;
+  font-size: 12pt;
+}
+.Hl-card-text{
+  grid-area: text;
+  padding: 1rem;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10pt;
+  line-height: 10pt;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.Hl-card-foot1{
+  grid-area: foot1;
+  padding: 1rem;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10pt;
+  line-height: 10pt;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.Hl-card-bike {
+  grid-area: foot2;
+  margin-left: .1rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }

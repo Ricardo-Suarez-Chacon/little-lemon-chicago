@@ -4,7 +4,7 @@ import Bike from '../img/bike.svg';
 const HlCard = () => {
 
     return(
-        <div className="Hl-card-container">
+        <article className="Hl-card-container">
             <img className="Hl-card-photo" src={Salad} alt='text photo'/>
             <h1 className="Hl-card-title">Greek salad</h1>
             <h1 className="Hl-card-price">$12.99</h1>
@@ -17,7 +17,7 @@ const HlCard = () => {
                 Order a delivery
             </h2>
             <img className="Hl-card-bike" src={Bike} alt='delivery icon' />
-        </div>
+        </article>
     )
 }
 export default HlCard

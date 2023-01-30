@@ -4,8 +4,8 @@ import Food from '../img/food.jpg';
 const Hero = () => {
     return(
         <>
-            <div className='Hero-container'>
-                <div className='Hero-Title'>
+            <section className='Hero-container'>
+                <article className='Hero-Title'>
                     <h1 className='Hero-Lemon'>Little Lemon</h1>
                     <h3 className='Hero-Chicago'>Chicago</h3>
                     <p className='Hero-Paragraph'>
@@ -15,12 +15,12 @@ const Hero = () => {
                         recipes served with a modern<br/>
                         twist</p>
                     <Button>Reserve a Table</Button>
-                </div>
-                <div className='Hero-photo'>
+                </article>
+                <picture className='Hero-photo'>
                     <img src={Food}></img>
-                </div>
+                </picture>
                 <div className='Hero-White'></div>
-            </div>
+            </section>
         </>
     )
 }

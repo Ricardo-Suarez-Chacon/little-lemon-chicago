@@ -14,11 +14,11 @@ const TestimonialCard = (props) => {
             <figure className="Testimonial-card-photo-container">
                 <img className="Testimonial-card-photo" src={Sophie} alt='text photo'/>
             </figure>
-            <p className="Testimonial-card-text1">
+            <blockquote className="Testimonial-card-text1">
             “Sed ut perspiciatis unde omnis iste 
             natus error sit voluptatem 
             accusantium doloremque laudantium”
-            </p>
+            </blockquote>
             <h2 className="Testimonial-card-name">
                 Carlo
             </h2>

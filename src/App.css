@@ -7,6 +7,7 @@ nav {
   align-items: center;
   height: 2rem;
   justify-content:space-between;
+  text-decoration: none;
 }
 menu {
   width: 85%;
@@ -15,13 +16,16 @@ menu {
   list-style:none;
   color:#495E57;
   justify-content:space-between;
+  text-decoration: none;
 }
 
-li {
+
+.links {
   transition: color 0.2s ease 100ms;
+  text-decoration: none;
+  color: #333333;
 }
-
-li:hover{
+.links:hover {
   color:#EE9972;
   cursor: pointer;
 }
@@ -63,6 +67,8 @@ li:hover{
   grid-area: main;
   height: auto;
 }
+
+/*-------------- footer --------------*/
 .App-foot {
   width: 100%;
   height: 8.5rem;
@@ -217,6 +223,7 @@ App-foot-logo {
   letter-spacing: 2px;
   margin-top: auto;
   margin-bottom: auto;
+  color: #333333;
 }
 .Hl-container-head2 {
   grid-area: hea2;
@@ -362,7 +369,6 @@ App-foot-logo {
 }
 .Testimonial-card-text1{
   grid-area: text1;
-  padding: 1rem;
   font-family: 'Karla';
   font-style: normal;
   font-weight: 500;
@@ -370,6 +376,9 @@ App-foot-logo {
   line-height: 10pt;
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Testimonial-card-text2{
   grid-area: text2;
@@ -389,4 +398,18 @@ App-foot-logo {
 }
 .Testimonial-stars{
   height: 2rem;
+}
+
+/* ------------------------ About --------------------------*/
+.About-container{
+  display: grid;
+  grid-gap: 1rem 3rem;
+  grid-template:
+  '. hea1 hea1 hea1 .' .1fr
+  '. con1 con2 con3 .' .9fr /1fr 1fr 1fr 1fr 1fr ;
+  height: auto;
+  background-image: url("/src/img/restaurant.jpg");
+}
+.About-description{
+  background-color: #495E57;
 }

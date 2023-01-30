@@ -1,17 +1,18 @@
+import { Routes, Route, Link } from "react-router-dom";
 import Hero from './Hero'
 import Highlights from './Highlights'
 import Testimonials from './Testimonials'
-import About from './About'
+
 
 
 const Main = () => {
 
     return(
+        
         <main className='App-main'>
             <Hero />
             <Highlights />
             <Testimonials />
-            <About />
         </main>
     )
 }

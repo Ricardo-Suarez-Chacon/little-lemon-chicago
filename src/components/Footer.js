@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logof from '../img/little-lemon-logo.png'
 import Whatsapp from '../img/whatsapp.svg'
 import Facebook from '../img/facebook.svg'
@@ -14,22 +15,22 @@ const Footer = () => {
             <nav >
                 <ul className='App-foot-ul'>
                     <li>
-                        <a>Home</a>
+                        <Link className="links" to="/">Home</Link>
                     </li>
                     <li>
-                        <a>About</a>
+                        <Link className="links" to="/About">About</Link>
                     </li>
                     <li>
-                        <a>Menu</a>
+                        <Link className="links" to="/Menu">Menu</Link>
                     </li>
                     <li>
-                        <a>Reservations</a>
+                        <Link className="links" to="/Reservations">Reservations</Link>
                     </li>
                     <li>
-                        <a>OnLine Order</a>
+                        <Link className="links" to="/OrderOnLine">Order online</Link>
                     </li>
                     <li>
-                        <a>Login</a>
+                        <Link className="links"  to="/Login">Login</Link>
                     </li>
                 </ul>
             </nav>

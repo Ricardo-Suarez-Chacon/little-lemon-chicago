@@ -1,26 +1,26 @@
-
+import { Routes, Route, Link } from "react-router-dom";
 const Nav = () => {
 
     return(
         <nav className='App-nav' >
             <menu>
                 <li>
-                    <a>Home</a>
+                    <Link className="links" to="/">Home</Link>
                 </li>
                 <li>
-                    <a>About</a>
+                    <Link className="links" to="/About">About</Link>
                 </li>
                 <li>
-                    <a>Menu</a>
+                    <Link className="links" to="/Menu">Menu</Link>
                 </li>
                 <li>
-                    <a>Reservations</a>
+                    <Link className="links" to="/Reservations">Reservations</Link>
                 </li>
                 <li>
-                    <a>OnLine Order</a>
+                <Link className="links" to="/OrderOnLine">Order online</Link>
                 </li>
                 <li>
-                    <a>Login</a>
+                    <Link className="links"  to="/Login">Login</Link>
                 </li>
             </menu>
         </nav>

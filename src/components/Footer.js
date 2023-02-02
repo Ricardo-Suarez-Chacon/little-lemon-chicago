@@ -24,7 +24,7 @@ const Footer = () => {
                         <Link className="links" to="/Menu">Menu</Link>
                     </li>
                     <li>
-                        <Link className="links" to="/Reservations">Reservations</Link>
+                        <Link className="links" to="/BookingPage">Reservations</Link>
                     </li>
                     <li>
                         <Link className="links" to="/OrderOnLine">Order online</Link>

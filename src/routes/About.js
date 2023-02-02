@@ -8,7 +8,7 @@ const About = () => {
 
     return(
         <>
-            <main className='App-main'>
+            <main className='About-container'>
                 <Header />
                 <Nav />
                 <AboutComp />

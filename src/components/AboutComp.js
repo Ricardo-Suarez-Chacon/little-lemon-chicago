@@ -3,7 +3,7 @@
 const AboutComp = () => {
 
     return(
-        <section className="About-container">
+        <section className="About-main">
             <p>About</p>
             <article className="About-description">
                 <h1 className='Hero-Lemon'>Little Lemon</h1>

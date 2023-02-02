@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import Home from './routes/Home';
 import About from './routes/About';
 import Menu from './routes/Menu';
-import Reservations from './routes/Reservations';
+import BookingPage  from './routes/BookingPage ';
 import OrderOnLine from './routes/OrderOnLine';
 import Login from './routes/Login';
 
@@ -18,7 +18,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/menu' element={<Menu />} />
-          <Route path='/reservations' element={<Reservations />} />
+          <Route path='/BookingPage' element={<BookingPage />} />
           <Route path='/OrderOnLine' element={<OrderOnLine />} />
           <Route path='/Login' element={<Login />} />
         </Routes>

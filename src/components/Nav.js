@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Nav = () => {
 
     return(
@@ -14,7 +14,7 @@ const Nav = () => {
                     <Link className="links" to="/Menu">Menu</Link>
                 </li>
                 <li>
-                    <Link className="links" to="/Reservations">Reservations</Link>
+                    <Link className="links" to="/BookingPage">Reservations</Link>
                 </li>
                 <li>
                 <Link className="links" to="/OrderOnLine">Order online</Link>

@@ -403,13 +403,28 @@ App-foot-logo {
 /* ------------------------ About --------------------------*/
 .About-container{
   display: grid;
-  grid-gap: 1rem 3rem;
   grid-template:
-  '. hea1 hea1 hea1 .' .1fr
-  '. con1 con2 con3 .' .9fr /1fr 1fr 1fr 1fr 1fr ;
-  height: auto;
-  background-image: url("/src/img/restaurant.jpg");
+  "header nav nav" .3fr
+  "about about about" auto
+  "foot foot foot" .7fr/ .3fr 1fr auto;
+  background-color:#fff;
 }
 .About-description{
   background-color: #495E57;
+}
+.About-main {
+  grid-area: about;
+  background-image: url("/src/img/restaurant.jpg");
+  width: 68rem;
+  height: 55rem;
+}
+/*------------------------Menu -----------*/
+
+
+
+
+.Reservation-form {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
 }

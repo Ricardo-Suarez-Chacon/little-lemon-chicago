@@ -1,14 +1,15 @@
 import Header from '../components/Header'
+import BookingForm from '../components/BookingForm'
 import Footer from '../components/Footer'
 
-const Reservations = () => {
+const BookingPage  = () => {
 
     return(
         <>
             <Header />
-            <h1>Reservations</h1>
+                <BookingForm />
             <Footer />
         </>
     )
 }
-export default Reservations
+export default BookingPage

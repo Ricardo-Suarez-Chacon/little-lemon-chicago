@@ -11,7 +11,7 @@ const About = () => {
             <main className='About-container'>
                 <Header />
                 <Nav />
-                <AboutComp />
+                <AboutComp className='App-main'/>
                 <Footer />
             </main>
 

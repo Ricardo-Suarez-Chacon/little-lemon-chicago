@@ -7,10 +7,10 @@ const Menu = () => {
 
     return(
         <>
-        <main className='Menu-container'>
+        <main className='App-container'>
             <Header />
             <Nav />
-            <MenuComp />
+            <MenuComp className='App-main'/>
             <Footer />
         </main>
         </>

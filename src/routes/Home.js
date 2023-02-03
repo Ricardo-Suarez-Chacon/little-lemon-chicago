@@ -1,17 +1,23 @@
 import Header from '../components/Header'
-import Main from '../components/Main'
+import Hero from '../components/Hero'
+import Highlights from '../components/Highlights'
+import Testimonials from '../components/Testimonials'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 const Home = () => {
     return(
         <>
-          <div className='App-container'>
+          <main className='App-container'>
             <Header/>
             <Nav />
-            <Main />
+            <section className='App-main'>
+              <Hero />
+              <Highlights />
+              <Testimonials />
+            </section>
             <Footer />
-          </div>
+          </main>
       </>
     )
 }

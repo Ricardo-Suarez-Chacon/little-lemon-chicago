@@ -4,13 +4,13 @@ const Stars = () => {
 
     return(
         <>
-            <div>
+            <figure>
                 <img className='Testimonial-stars' src={Star} alt="Quality stars"/>
                 <img className='Testimonial-stars' src={Star} alt="Quality stars"/>
                 <img className='Testimonial-stars' src={Star} alt="Quality stars"/>
                 <img className='Testimonial-stars' src={Star} alt="Quality stars"/>
                 <img className='Testimonial-stars' src={Star} alt="Quality stars"/>
-            </div>
+            </figure>
         </>
     )
 }

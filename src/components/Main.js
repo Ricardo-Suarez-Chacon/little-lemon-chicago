@@ -7,25 +7,30 @@ import Menu from '../routes/Menu';
 import BookingPage  from '../routes/BookingPage ';
 import OrderOnLine from '../routes/OrderOnLine';
 import Login from '../routes/Login';
-import { useReducer } from 'react';
+import { useReducer, useEffect } from 'react';
+import { fetchAPI } from "../api/api";
 
 
 
 
-const updateTimes = (availableTimes , action ) => {
-    console.log('action', action)
-    console.log('dispponibles', availableTimes)
+
+export const updateTimes = (availableTimes , action ) => {
+    const acti = Object.getOwnPropertyNames(action).toString()
+    switch(acti){
+        case 'date':
+            availableTimes = fetchAPI(new Date(action.date))
+            break;
+        default:
+    }
     return availableTimes
 }
 
-const initializeTimes = () => {
-    let availableTimes = ['17:00','18:00','19:010','20:00','21:00','22:00']
-    return availableTimes
+export const initializeTimes = () => {
+    const date = new Date()
+    return fetchAPI(date)
 }
 
 const Main = () => {
-
-
 
 
 

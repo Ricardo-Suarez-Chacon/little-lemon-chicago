@@ -21,7 +21,7 @@ const BookingForm  = (props) => {
                     id="res-date"
                     name="date"
                     onChange={(e) =>{
-                        props.dispatch( { [e.target.name]: e.target.value } )
+                        props.dispatch( { "date": e.target.value } )
                             }
                         }
                 />
@@ -29,10 +29,6 @@ const BookingForm  = (props) => {
                 <select
                     id="res-time"
                     name="time"
-                    onChange={(e) =>{
-                        props.dispatch( { [e.target.name]: e.target.value } )
-                            }
-                        }
                 >
                     {props.availableTimes.map((time, index) => 
                         <option key={index}> {time}</option>
@@ -47,19 +43,11 @@ const BookingForm  = (props) => {
                     max="10"
                     id="guests"
                     name= "guests"
-                    onChange={(e) =>{
-                        props.dispatch( { [e.target.name]: e.target.value } )
-                            }
-                        }
                 />
                 <label htmlFor="occasion">Occasion</label>
                 <select 
                     id="occasion"
                     name="occasion"
-                    onChange={(e) =>{
-                        props.dispatch( { [e.target.name]: e.target.value } )
-                            }
-                        }
                     >
                     <option>Special Ocassion</option>
                     <option>Birthday</option>

@@ -7,6 +7,7 @@ import Menu from '../routes/Menu';
 import BookingPage  from '../routes/BookingPage ';
 import OrderOnLine from '../routes/OrderOnLine';
 import Login from '../routes/Login';
+import ConfirmedBookingPage from '../routes/ConfirmedBookingPage';
 import { useReducer, useEffect } from 'react';
 import { fetchAPI } from "../api/api";
 
@@ -46,6 +47,7 @@ const Main = () => {
                     <Route path='/BookingPage' element={<BookingPage availableTimes={state} dispatch={dispatch}/>} />
                     <Route path='/OrderOnLine' element={<OrderOnLine />} />
                     <Route path='/Login' element={<Login />} />
+                    <Route path='/ConfirmedBookingPage' element={<ConfirmedBookingPage />} />
                     </Routes>
                 </BrowserRouter>
             </>
